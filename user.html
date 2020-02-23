@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="user.css">
+</head>
+
+<body>
+	 <div class="nagi_bar">
+      <a class="kanak">Name The Code</a>
+ </div>
+	<div >
+			<h3 class="prno">Problem Statement</h3>
+	</div>
+
+	<div class="question">
+		<form>
+			<textarea class="ques" rows="50" cols="150" >
+#include <stdio.h> 
+
+int myfun(int arr[], int l, int r, int x) 
+{ 
+	if (r >= l) { 
+		int mid = l + (r - l) / 2; 
+
+		if (arr[mid] == x) 
+			return mid; 
+		if (arr[mid] > x) 
+			return myfun(arr, l, mid - 1, x); 
+		return myfun(arr, mid + 1, r, x); 
+	} 
+    return -1; 
+} 
+
+int main(void) 
+{ 
+	int arr[] = { 2, 3, 4, 10, 40 }; 
+	int n = sizeof(arr) / sizeof(arr[0]); 
+	int x = 10; 
+	int result = myfun(arr, 0, n - 1, x); 
+	(result == -1) ? printf("Element is not present in array") 
+				: printf("Element is present at index %d", 
+							result); 
+	return 0; 
+} 
+</textarea>
+			<input class="reply" type="text" name="reply" placeholder="Enter your answer here" required>
+			<br>
+			<button class="ans" type="submit" onclick="message()">Submit Answer</button>
+		</form>
+		</div>
+	<div class="popup" id="message">
+		<form class="form">
+			<h3 style="padding-left:30%;">Want to submit the answer?</h3>
+			<button type="submit" class="btn" onclick=success() >Yes</button>
+			<button type="button" class="btn" onclick="cancelsubmit()">No</button>
+		</form>	
+	
+</div>
+	<script>
+	function success()
+	{
+		alert("Code submitted successfully!!");
+	}
+		function message()
+		  {document.getElementById("message").style.display="block";}
+		
+		function cancelsubmit()
+		{
+			document.getElementById("message").style.display="none";
+			alert("code not submitted!");
+		}
+	</script>
+
+</body>
+
+</html>
