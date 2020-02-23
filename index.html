@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<style>
+  body{
+    margin: 0px;
+  background-color: green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  }
+
+ 
+ .container_head{
+  
+  top:0px;
+ }
+  .container{
+  display:inline-block;
+  margin-left:3%;
+  margin-top: 10%;
+  float:left;
+  background:lightgreen;
+  width: 45%;
+ 
+  height: 475px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: black;
+}
+
+.heade{
+  margin-top:4%;
+  font-weight: bold;
+  
+  padding-bottom: 2%;
+  padding-left: 25%;
+ } 
+ .login{ 
+  display: inline-block;
+  margin-top: 10%;
+  margin-left:2%;
+  background-color: lightgreen;
+  padding-top: 30px;
+  width: 45%;
+  float:left;
+  height:450px;
+  text-align: center;
+  border-style: solid;
+  border-color:black;
+  border-radius: 15px;
+  
+ }
+ .nagi_bar{
+  height:40px;
+  background-color:black;
+  opacity: 0.8;
+  padding:1%1%1%2%;
+
+ }
+ 
+ .kanak{
+  color: green;
+  font-weight: bold;
+  opacity: 0.8;
+  font-size:30px;}
+
+@media screen and (max-width: 499px)
+{  .container{
+  
+   width:90%;
+    height:40%;
+}
+   .login{
+    
+    width:90%;
+    height:40%;
+  }
+  
+}
+@media screen and (min-width: 500px)
+{
+   .container h3{
+    font-size: 40px;
+
+  }
+  .container p{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 650px)
+{
+   .container h3{
+    font-size: 45px;
+
+  }
+  .container p{
+    font-size: 22px;
+  }
+}
+  @media screen and (min-width: 800px)
+{
+   .container h3{
+    font-size: 50px;
+
+  }
+  .container p{
+    font-size: 25px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <script>
+    var i=5;
+    console.log(i);
+  </script>
+    <div class="nagi_bar">
+      <a class="kanak">Name The Code</a>
+ </div>
+ <div class="container_head" >
+  <div class = "container">
+   <h3 class="heade">About us</h3>
+
+    <p style="padding-left:30px;padding-right:30px;"> Name the code is an algorithmic game project.It is designed to facilate students with quiz of based on data structure.It is a web based algorithm guessing platform where mentor/admin can post the code or algorithm and students need to guess the name of it within limited time frame.</p>
+    
+  </div>
+    <div class="login">
+        <form>  
+                <a class="one" style="text-align:center; color:black;font-size:95%;" >Login Id:<br></a>
+          <input type="text" name="firstname" placeholder="Enter Login Id" style="border-color: black;width: 80%; height:25px;margin-top: 8px; margin-bottom: 5px;"><br>
+         <a class="two" style="margin-left: 4px;font-size:95%;color:black;">Password:<br></a>
+          <input type="password" name="password" placeholder="Enter Password" style="border-color: black;width:80%;height:25px;margin-top: 8px;margin-bottom: 5px;"><br>
+
+          <input type="submit" name="submit" value="Login" style="margin-top: 10px; background-color:green;width: 80%; border-color: black;font-size:18px;height:25px;"><br>
+          <p style="color: black;font-size:95%;">New User? <a href="sign.html" style="color:green;">Sign Up</a></p>
+
+        </form>
+      </div>
+  </div>
+  
+</body>
+</html>
